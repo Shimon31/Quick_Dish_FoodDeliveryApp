@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+
+    <ImageView
+        android:id="@+id/logoId"
+        android:layout_width="91dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/headerTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Waves Of Food"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/logoId" />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Deliever Favorite Food"
+        android:textAlignment="center"
+        android:textColor="@color/text_colour"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/headerTV" />
+
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#D3E3E2"
+        android:fontFamily="@font/lato"
+        android:hint="Email or Phone Number"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#D3E3E2"
+        android:fontFamily="@font/lato"
+        android:hint="Password"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/emailET" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        app:layout_constraintTop_toBottomOf="@id/passwordET"
+        app:layout_constraintStart_toStartOf="@id/passwordET"
+        app:layout_constraintEnd_toEndOf="@id/passwordET"
+        android:layout_marginTop="20dp"
+        android:id="@+id/or"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

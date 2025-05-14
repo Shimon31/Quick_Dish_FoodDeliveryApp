@@ -19,4 +19,9 @@
         android:name="com.example.foodorderingapp.onBoarding1Fragment"
         android:label="fragment_on_boarding1"
         tools:layout="@layout/fragment_on_boarding1" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.foodorderingapp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
 </navigation>
