@@ -6,4 +6,5 @@
     <color name="iconColor">#FF5722</color>
     <color name="startColor">#35D9C9</color>
     <color name="endColor">#009688</color>
+    <color name="editText_colour">#D3E3E2</color>
 </resources>

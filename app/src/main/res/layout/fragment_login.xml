@@ -11,7 +11,7 @@
         android:id="@+id/logoId"
         android:layout_width="91dp"
         android:layout_height="92dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="80dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +49,7 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/button_shape"
-        android:backgroundTint="#D3E3E2"
+        android:backgroundTint="@color/editText_colour"
         android:fontFamily="@font/lato"
         android:hint="Email or Phone Number"
         android:textAlignment="center"
@@ -63,21 +63,115 @@
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/button_shape"
-        android:backgroundTint="#D3E3E2"
+        android:backgroundTint="@color/editText_colour"
         android:fontFamily="@font/lato"
         android:hint="Password"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/emailET" />
 
-
     <TextView
+        android:id="@+id/orTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="or"
-        app:layout_constraintTop_toBottomOf="@id/passwordET"
-        app:layout_constraintStart_toStartOf="@id/passwordET"
-        app:layout_constraintEnd_toEndOf="@id/passwordET"
         android:layout_marginTop="20dp"
-        android:id="@+id/or"/>
+        android:text="or"
+        app:layout_constraintEnd_toEndOf="@id/passwordET"
+        app:layout_constraintStart_toStartOf="@id/passwordET"
+        app:layout_constraintTop_toBottomOf="@id/passwordET" />
+
+    <TextView
+        android:id="@+id/ContinueWithTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Continue With"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@id/passwordET"
+        app:layout_constraintStart_toStartOf="@id/passwordET"
+        app:layout_constraintTop_toBottomOf="@id/orTV" />
+
+    <TextView
+        android:id="@+id/facebookBtn"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/editText_colour"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="Facebook"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@id/passwordET"
+        app:layout_constraintTop_toBottomOf="@id/ContinueWithTV" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/facebook"
+        app:layout_constraintBottom_toBottomOf="@id/facebookBtn"
+        app:layout_constraintStart_toStartOf="@id/facebookBtn"
+        app:layout_constraintTop_toTopOf="@id/facebookBtn" />
+
+    <TextView
+        android:id="@+id/googleBtn"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="@color/editText_colour"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="Google"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/passwordET"
+        app:layout_constraintTop_toBottomOf="@id/ContinueWithTV" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/google"
+        app:layout_constraintBottom_toBottomOf="@id/googleBtn"
+        app:layout_constraintStart_toStartOf="@id/googleBtn"
+        app:layout_constraintTop_toTopOf="@id/googleBtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/loginBtn"
+        android:layout_width="157dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/facebookBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/createNewAccountTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Don’t Have Account?"
+        android:textAlignment="center"
+        android:textColor="#025706"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/loginBtn" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
