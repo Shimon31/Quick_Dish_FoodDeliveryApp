@@ -11,11 +11,13 @@
         android:id="@+id/logoId"
         android:layout_width="91dp"
         android:layout_height="92dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
         android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <TextView
         android:id="@+id/headerTV"
@@ -41,6 +43,17 @@
         android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@id/headerTV" />
 
+    <TextView
+        android:id="@+id/loginTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Login To Your  Account"
+        android:textAlignment="center"
+        android:textColor="@color/text_colour"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/title" />
 
     <EditText
         android:id="@+id/emailET"
@@ -54,7 +67,7 @@
         android:hint="Email or Phone Number"
         android:textAlignment="center"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/title" />
+        app:layout_constraintTop_toBottomOf="@id/loginTV" />
 
     <EditText
         android:id="@+id/passwordET"
