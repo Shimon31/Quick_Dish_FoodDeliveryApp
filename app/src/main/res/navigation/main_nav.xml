@@ -18,10 +18,32 @@
         android:id="@+id/onBoarding1Fragment"
         android:name="com.example.foodorderingapp.onBoarding1Fragment"
         android:label="fragment_on_boarding1"
-        tools:layout="@layout/fragment_on_boarding1" />
+        tools:layout="@layout/fragment_on_boarding1" >
+        <action
+            android:id="@+id/action_onBoarding1Fragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.foodorderingapp.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.foodorderingapp.SignUpFragment"
+        android:label="fragment_sign_up"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.foodorderingapp.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
 </navigation>
