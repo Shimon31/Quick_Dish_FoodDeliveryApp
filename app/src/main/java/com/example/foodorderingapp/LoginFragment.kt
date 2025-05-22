@@ -27,6 +27,10 @@ class LoginFragment : Fragment() {
         binding.createNewAccountTV.setOnClickListener {
             findNavController().navigate(R.id.action_loginFragment_to_signUpFragment)
         }
+        binding.loginBtn.setOnClickListener {
+
+            findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
+        }
     }
 
 }
