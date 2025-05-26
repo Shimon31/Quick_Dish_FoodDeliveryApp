@@ -54,5 +54,5 @@ dependencies {
     // Views/Fragments integration
     implementation(libs.androidx.navigation.fragment)
     implementation(libs.androidx.navigation.ui)
-
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
 }
