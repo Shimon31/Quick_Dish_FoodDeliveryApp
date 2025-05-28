@@ -18,7 +18,7 @@ class CartAdapter(
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+
     }
 
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
