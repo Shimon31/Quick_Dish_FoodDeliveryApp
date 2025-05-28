@@ -1,4 +1,4 @@
-package com.example.foodorderingapp
+package com.example.foodorderingapp.Adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
