@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.foodorderingapp.databinding.ItemDesignBinding
 
-class PopularAdapter(private val itemList: List<String>, private val imageList: List<Int>) :
+class PopularAdapter(private val itemList: List<String>, private val price:List<String>, private val imageList: List<Int>) :
     RecyclerView.Adapter<PopularAdapter.PopularViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PopularViewHolder {
@@ -18,13 +18,17 @@ class PopularAdapter(private val itemList: List<String>, private val imageList: 
     }
 
     override fun onBindViewHolder(holder: PopularViewHolder, position: Int) {
-        holder.bind(itemList[position], imageList[position])
+        holder.bind(itemList[position],price[position], imageList[position])
     }
 
     class PopularViewHolder(private val binding: ItemDesignBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
-        fun bind(item: String, imageRes: Int) {
+        fun bind(item: String,price: String, imageRes: Int) {
+
+            binding.itemName.text = item
+            binding.itemPrice.text = price
+            binding.itemIV.setImageResource(imageRes)
 
 
 
