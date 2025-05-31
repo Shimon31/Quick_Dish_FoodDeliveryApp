@@ -42,12 +42,12 @@
         android:text="Popular"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@id/viewmenu"
+        app:layout_constraintBottom_toBottomOf="@id/viewMenu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/viewmenu" />
+        app:layout_constraintTop_toTopOf="@id/viewMenu" />
 
     <TextView
-        android:id="@+id/viewmenu"
+        android:id="@+id/viewMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -65,7 +65,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/viewmenu"
+        app:layout_constraintTop_toBottomOf="@id/viewMenu"
         tools:listitem="@layout/item_design"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
