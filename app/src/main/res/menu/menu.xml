@@ -11,10 +11,11 @@
 
     <item android:title="Search"
         android:icon="@drawable/search"
-        android:id="@+id/historyFragment"/>
+        android:id="@+id/searchFragment"/>
 
     <item android:title="History"
-        android:icon="@drawable/history"/>
+        android:icon="@drawable/history"
+        android:id="@+id/historyFragment"/>
 
     <item android:title="Profile"
         android:icon="@drawable/user"
