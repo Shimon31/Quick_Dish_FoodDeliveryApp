@@ -28,5 +28,10 @@ class MainFragment : Fragment() {
             ?.findNavController() ?: return
 
         binding.bottomNavigation.setupWithNavController(navController)
+
+        binding.notificationBell.setOnClickListener {
+            val bottomSheetDialog = NotificationBottomFragment()
+
+        }
     }
 }
