@@ -6,10 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.foodorderingapp.databinding.FragmentNotificationBottomBinding
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import java.util.ArrayList
 
 
-class NotificationBottomFragment : Fragment() {
+class NotificationBottomFragment : BottomSheetDialogFragment() {
     lateinit var binding: FragmentNotificationBottomBinding
 
     override fun onCreateView(
