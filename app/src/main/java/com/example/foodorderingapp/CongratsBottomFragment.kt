@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.example.foodorderingapp.databinding.FragmentCongratsBottomBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
@@ -20,6 +21,7 @@ class CongratsBottomFragment : BottomSheetDialogFragment() {
         binding = FragmentCongratsBottomBinding.inflate(layoutInflater,container,false)
 
         binding.goHomeTV.setOnClickListener {
+            findNavController().navigate(R.id.action_pay_Out_Fragment_to_homeFragment)
             dismiss()
         }
 

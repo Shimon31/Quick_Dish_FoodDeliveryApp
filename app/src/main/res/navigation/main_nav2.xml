@@ -48,7 +48,11 @@
         android:id="@+id/pay_Out_Fragment"
         android:name="com.example.foodorderingapp.Pay_Out_Fragment"
         android:label="fragment_pay__out_"
-        tools:layout="@layout/fragment_pay__out_" />
+        tools:layout="@layout/fragment_pay__out_" >
+        <action
+            android:id="@+id/action_pay_Out_Fragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/congratsBottomFragment"
         android:name="com.example.foodorderingapp.CongratsBottomFragment"
