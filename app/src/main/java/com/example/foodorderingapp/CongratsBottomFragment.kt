@@ -23,6 +23,7 @@ class CongratsBottomFragment : BottomSheetDialogFragment() {
         binding.goHomeTV.setOnClickListener {
             findNavController().navigate(R.id.action_pay_Out_Fragment_to_homeFragment)
             dismiss()
+            //complete
         }
 
         return binding.root
