@@ -19,6 +19,7 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentLoginBinding.inflate(layoutInflater,container,false)
+        //ViewBinding(Enable)
         return binding.root
     }
 
