@@ -58,4 +58,9 @@
         android:name="com.example.foodorderingapp.CongratsBottomFragment"
         android:label="fragment_congrats_bottom"
         tools:layout="@layout/fragment_congrats_bottom" />
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.example.foodorderingapp.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
 </navigation>

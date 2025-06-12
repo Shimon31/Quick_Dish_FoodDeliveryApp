@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsFragment">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/arrow_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/foodNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Food Name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backBtn" />
+
+    <ImageView
+        android:id="@+id/foodIV"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="center"
+        android:src="@drawable/menu1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foodNameTV" />
+
+    <TextView
+        android:id="@+id/shortTitleTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Short description"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/foodIV"
+        app:layout_constraintTop_toBottomOf="@id/foodIV" />
+
+    <TextView
+        android:id="@+id/shortDescriptiopnTV"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/shortText"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/shortTitleTV"
+        app:layout_constraintTop_toBottomOf="@id/shortTitleTV" />
+
+    <TextView
+        android:id="@+id/IngredientsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Ingredients"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/foodIV"
+        app:layout_constraintTop_toBottomOf="@id/shortDescriptiopnTV" />
+
+    <TextView
+        android:id="@+id/itemTv"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="item 1"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/IngredientsTV"
+        app:layout_constraintTop_toBottomOf="@id/IngredientsTV" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goHomeTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_shape"
+        android:fontFamily="@font/yeon_sung"
+        android:text="Add To Chart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemTv" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
