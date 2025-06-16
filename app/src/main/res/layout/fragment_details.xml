@@ -26,7 +26,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/backBtn" />
+        app:layout_constraintTop_toBottomOf="@id/backBtn"/>
 
     <ImageView
         android:id="@+id/foodIV"
@@ -83,21 +83,21 @@
         app:layout_constraintStart_toStartOf="@id/IngredientsTV"
         app:layout_constraintTop_toBottomOf="@id/IngredientsTV" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/goHomeTV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20sp"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/button_shape"
-        android:fontFamily="@font/yeon_sung"
-        android:text="Add To Chart"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/itemTv" />
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/goHomeTV"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="20sp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:background="@drawable/button_shape"-->
+<!--        android:fontFamily="@font/yeon_sung"-->
+<!--        android:text="Add To Chart"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/itemTv" />-->
 
 
 
