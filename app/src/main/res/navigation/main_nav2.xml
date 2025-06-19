@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.foodorderingapp.HomeFragment"
+        android:name="com.example.foodorderingapp.View.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/cartFragment"
-        android:name="com.example.foodorderingapp.CartFragment"
+        android:name="com.example.foodorderingapp.View.CartFragment"
         android:label="fragment_cart"
         tools:layout="@layout/fragment_cart" >
         <action
@@ -21,32 +21,32 @@
     </fragment>
     <fragment
         android:id="@+id/historyFragment"
-        android:name="com.example.foodorderingapp.HistoryFragment"
+        android:name="com.example.foodorderingapp.View.HistoryFragment"
         android:label="fragment_history"
         tools:layout="@layout/fragment_history" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.foodorderingapp.ProfileFragment"
+        android:name="com.example.foodorderingapp.View.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/menuBottomSheetFragment"
-        android:name="com.example.foodorderingapp.MenuBottomSheetFragment"
+        android:name="com.example.foodorderingapp.View.MenuBottomSheetFragment"
         android:label="fragment_menu_bottom_sheet"
         tools:layout="@layout/fragment_menu_bottom_sheet" />
     <fragment
         android:id="@+id/searchFragment"
-        android:name="com.example.foodorderingapp.SearchFragment"
+        android:name="com.example.foodorderingapp.View.SearchFragment"
         android:label="fragment_search"
         tools:layout="@layout/fragment_search" />
     <fragment
         android:id="@+id/notificationBottomFragment"
-        android:name="com.example.foodorderingapp.NotificationBottomFragment"
+        android:name="com.example.foodorderingapp.View.NotificationBottomFragment"
         android:label="fragment_notification_bottom"
         tools:layout="@layout/fragment_notification_bottom" />
     <fragment
         android:id="@+id/pay_Out_Fragment"
-        android:name="com.example.foodorderingapp.Pay_Out_Fragment"
+        android:name="com.example.foodorderingapp.View.Pay_Out_Fragment"
         android:label="fragment_pay__out_"
         tools:layout="@layout/fragment_pay__out_" >
         <action
@@ -55,12 +55,12 @@
     </fragment>
     <fragment
         android:id="@+id/congratsBottomFragment"
-        android:name="com.example.foodorderingapp.CongratsBottomFragment"
+        android:name="com.example.foodorderingapp.View.CongratsBottomFragment"
         android:label="fragment_congrats_bottom"
         tools:layout="@layout/fragment_congrats_bottom" />
     <fragment
         android:id="@+id/detailsFragment"
-        android:name="com.example.foodorderingapp.DetailsFragment"
+        android:name="com.example.foodorderingapp.View.DetailsFragment"
         android:label="fragment_details"
         tools:layout="@layout/fragment_details" />
 </navigation>

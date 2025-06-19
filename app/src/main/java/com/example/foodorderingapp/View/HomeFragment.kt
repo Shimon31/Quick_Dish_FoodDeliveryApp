@@ -1,4 +1,4 @@
-package com.example.foodorderingapp
+package com.example.foodorderingapp.View
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -11,6 +11,7 @@ import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.interfaces.ItemClickListener
 import com.denzcoskun.imageslider.models.SlideModel
 import com.example.foodorderingapp.Adapter.PopularAdapter
+import com.example.foodorderingapp.R
 import com.example.foodorderingapp.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
@@ -61,7 +62,8 @@ class HomeFragment : Fragment() {
         val foodName = listOf("Cake", "Momo", "Ice Cream", "Soup","Pasta","Sharma","Platter")
         val price = listOf("$3", "$2", "$4", "$5","$4","$3","$6")
         val foodImage =
-            listOf(R.drawable.menu1,
+            listOf(
+                R.drawable.menu1,
                 R.drawable.menu2,
                 R.drawable.menu3,
                 R.drawable.menu4,

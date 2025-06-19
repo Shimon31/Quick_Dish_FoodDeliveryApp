@@ -1,18 +1,14 @@
-package com.example.foodorderingapp
+package com.example.foodorderingapp.View
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.denzcoskun.imageslider.constants.ScaleTypes
-import com.denzcoskun.imageslider.interfaces.ItemClickListener
-import com.denzcoskun.imageslider.models.SlideModel
 import com.example.foodorderingapp.Adapter.CartAdapter
-import com.example.foodorderingapp.Adapter.PopularAdapter
+import com.example.foodorderingapp.R
 import com.example.foodorderingapp.databinding.FragmentCartBinding
 
 
