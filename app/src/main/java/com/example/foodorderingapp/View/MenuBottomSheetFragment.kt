@@ -1,14 +1,12 @@
-package com.example.foodorderingapp
+package com.example.foodorderingapp.View
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.foodorderingapp.Adapter.CartAdapter
 import com.example.foodorderingapp.Adapter.MenuAdapter
-import com.example.foodorderingapp.Adapter.PopularAdapter
+import com.example.foodorderingapp.R
 import com.example.foodorderingapp.databinding.FragmentMenuBottomSheetBinding
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 

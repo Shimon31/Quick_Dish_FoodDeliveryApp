@@ -1,14 +1,13 @@
-package com.example.foodorderingapp
+package com.example.foodorderingapp.View
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
 import com.example.foodorderingapp.Adapter.BuyAgainAdapter
+import com.example.foodorderingapp.R
 import com.example.foodorderingapp.databinding.FragmentHistoryBinding
-import com.example.foodorderingapp.databinding.HistoryItemBinding
 
 
 class HistoryFragment : Fragment() {

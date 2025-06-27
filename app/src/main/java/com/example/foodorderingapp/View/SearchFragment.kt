@@ -1,4 +1,4 @@
-package com.example.foodorderingapp
+package com.example.foodorderingapp.View
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.foodorderingapp.Adapter.MenuAdapter
+import com.example.foodorderingapp.R
 import com.example.foodorderingapp.databinding.FragmentSearchBinding
 
 class SearchFragment : Fragment() {

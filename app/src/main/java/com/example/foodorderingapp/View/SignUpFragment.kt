@@ -1,4 +1,4 @@
-package com.example.foodorderingapp
+package com.example.foodorderingapp.View
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,27 +6,28 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.foodorderingapp.databinding.FragmentOnBoarding1Binding
+import com.example.foodorderingapp.R
+import com.example.foodorderingapp.databinding.FragmentSignUpBinding
 
-class onBoarding1Fragment : Fragment() {
-    lateinit var binding: FragmentOnBoarding1Binding
+
+class SignUpFragment : Fragment() {
+
+    lateinit var binding: FragmentSignUpBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentOnBoarding1Binding.inflate(layoutInflater, container, false)
+        binding = FragmentSignUpBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
-
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.nextBtn.setOnClickListener {
-            findNavController().navigate(R.id.action_onBoarding1Fragment_to_loginFragment)
+        binding.createNewAccountTV.setOnClickListener {
+            findNavController().navigate(R.id.action_signUpFragment_to_loginFragment)
         }
     }
-
 
 }
