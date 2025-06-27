@@ -17,6 +17,7 @@ class DetailsFragment : Fragment() {
     ): View? {
         binding = FragmentDetailsBinding.inflate(layoutInflater,container,false)
         return binding.root
+        ///
 
     }
 
